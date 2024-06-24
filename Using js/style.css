@@ -1,0 +1,41 @@
+#slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+img {
+    width: 1024px;
+    height: 720px;
+}
+
+.left-button {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+    width: 70px;
+    height: 40px;
+}
+
+.right-button {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: 1;
+    width: 70px;
+    height: 40px;
+}
